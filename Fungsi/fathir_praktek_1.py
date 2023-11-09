@@ -5,12 +5,10 @@
 #Deskripsi Pekerjaan: Buatlah sebuah fungsi yang menghitung total dari deret bilangan ganjil hingga
 #batas tertentu yang ditentukan pengguna.
 
-def total_deret_ganjil(batas):
-    total = 0
-    for i in range(1, batas + 1, 2):
-        total += i
-    return total
+def hitung_bilangan_ganjil_sebelum(angka):
+    jumlah_ganjil = angka // 2
+    return jumlah_ganjil
 
-batas = int(input("Masukkan batas: "))
-hasil = total_deret_ganjil(batas)
-print(f"Total deret bilangan ganjil hingga batas {batas} adalah {hasil}.")
+angka = int(input("Masukkan angka tertentu: "))
+jumlah_ganjil_sebelum = hitung_bilangan_ganjil_sebelum(angka)
+print(f"Jumlah bilangan ganjil sebelum {angka} adalah {jumlah_ganjil_sebelum}")
